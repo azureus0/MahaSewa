@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MahaSewa</title>
+    <link rel="icon" href="img/Logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="min-h-screen flex flex-col font-sans">
+
+    <!-- Hero Wrapper -->
+    <section class="relative h-[60vh] bg-cover bg-center bg-no-repeat"
+        style="background-image: url('img/hero/hero-1.jpg');">
+
+        <!-- Overlay putih transparan -->
+        <div class="absolute inset-0 bg-white/80 z-0"></div>
+
+        <!-- Navbar -->
+        <nav class="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-10">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="img/Logo.png" alt="Logo MahaSewa" class="h-6 w-6 object-contain" />
+                <div class="text-2xl font-bold text-[#0075be]">MahaSewa</div>
+            </a>
+            <!-- <ul class="hidden md:flex gap-6 text-gray-600 font-medium">
+                <li><a href="#" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#" class="hover:text-blue-600">About</a></li>
+                <li><a href="#" class="hover:text-blue-600">Pricing</a></li>
+                <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+                <li><a href="#" class="hover:text-blue-600">Blog</a></li>
+            </ul> -->
+            <div class="flex gap-3">
+                <button
+                    class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">Login</button>
+                <button
+                    class="bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-800 transition">Register</button>
+            </div>
+        </nav>
+
+        <!-- Hero Content (centered vertically & horizontally) -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-20 z-9">
+            <!-- Headline -->
+            <div class="mb-8 max-w-3xl space-y-5">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                    Sewa & sewakan barang <span class="block">jadi lebih mudah!</span>
+                </h1>
+            </div>
+
+            <!-- Search Box -->
+            <div
+                class="mt-8 w-full max-w-3xl bg-white rounded-2xl shadow-lg p-4 flex flex-col md:flex-row gap-3 items-center md:items-stretch">
+                <select id="select-kota" name="kota"
+                    class="bg-gray-100 text-sm rounded-md px-4 py-2 w-full md:w-auto focus:outline-none">
+                    <option value="">Pilih Kota</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Jakarta">Jakarta</option>
+                </select>
+
+                <select id="select-kategori" name="kategori"
+                    class="bg-gray-100 text-sm rounded-md px-4 py-2 w-full md:w-auto focus:outline-none">
+                    <option value="">Kategori</option>
+                    <option value="Furnitur">Furnitur</option>
+                    <option value="Peralatan Dapur">Peralatan Dapur</option>
+                    <option value="Outdoor">Outdoor</option>
+                    <option value="Elektronik">Elektronik</option>
+                    <option value="Alat Musik">Alat Musik</option>
+                    <option value="Fashion">Fashion</option>
+                </select>
+
+                <input id="input-search" name="nama" type="text" placeholder="Cari barang..."
+                    class="bg-gray-100 text-sm rounded-md px-4 py-2 flex-grow focus:outline-none w-full" />
+
+                <button id="btn-search"
+                    class="bg-blue-600 hover:bg-blue-700 transition text-white px-4 py-2 rounded-md">
+                    Cari
+                </button>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- Kategori Populer Section -->
+    <section class="px-6 md:px-20 mt-10">
+        <h2 class="text-3xl font-bold mb-8">Kategori Populer</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+
+            <!-- Card 1: Furnitur -->
+            <a href="kategori.html?kategori=Furnitur"
+                class="relative flex items-center justify-between bg-[#f8f9fa] rounded-3xl px-6 py-5 shadow-md overflow-hidden h-36 hover:shadow-lg transition">
+                <div class="text-[#3d3d3e] font-semibold text-lg z-10 drop-shadow-md">
+                    Furnitur
+                </div>
+                <div class="relative -mr-6 w-full h-full">
+                    <img src="img/kategori/furnitur-3.png" alt="Furnitur"
+                        class="absolute -bottom-20 left-1 w-auto h-[210px] object-cover drop-shadow-md" />
+                </div>
+            </a>
+
+            <!-- Card 2: Peralatan Dapur -->
+            <a href="kategori.html?kategori=Peralatan Dapur"
+                class="relative flex items-center justify-between bg-[#f8f9fa] rounded-3xl px-6 py-5 shadow-md overflow-hidden h-36 hover:shadow-lg transition">
+                <div class="text-[#3d3d3e] font-semibold text-lg z-10 drop-shadow-md">
+                    Peralatan Dapur
+                </div>
+                <div class="relative -mr-6 w-full h-full overflow-visible">
+                    <img src="img/kategori/peralatan-dapur.png" alt="Peralatan Dapur"
+                        class="absolute -bottom-1 left-4 w-auto h-[90px] object-cover drop-shadow-md overflow-visible rotate-[45deg]" />
+                </div>
+            </a>
+
+            <!-- Card 3: Outdoor -->
+            <a href="kategori.html?kategori=Outdoor"
+                class="relative flex items-center justify-between bg-[#f8f9fa] rounded-3xl px-6 py-5 shadow-md overflow-hidden h-36 hover:shadow-lg transition">
+                <div class="text-[#3d3d3e] font-semibold text-lg z-10 drop-shadow-md">
+                    Outdoor
+                </div>
+                <div class="relative -mr-6 w-full h-full overflow-visible">
+                    <img src="img/kategori/outdoor.png" alt="Outdoor"
+                        class="absolute -bottom-14 left-4 w-auto h-[180px] object-cover drop-shadow-md overflow-visible" />
+                </div>
+            </a>
+
+            <!-- Card 4: Elektronik -->
+            <a href="kategori.html?kategori=Elektronik"
+                class="relative flex items-center justify-between bg-[#f8f9fa] rounded-3xl px-6 py-5 shadow-md overflow-hidden h-36 hover:shadow-lg transition">
+                <div class="text-[#3d3d3e] font-semibold text-lg z-10 drop-shadow-md">
+                    Elektronik
+                </div>
+                <div class="relative -mr-6 w-full h-full">
+                    <img src="img/kategori/elektronik-3.png" alt="Elektronik"
+                        class="absolute w-full h-[160px] object-cover drop-shadow-md" />
+                </div>
+            </a>
+
+            <!-- Card 5: Alat Musik -->
+            <a href="kategori.html?kategori=Alat Musik"
+                class="relative flex items-center justify-between bg-[#f8f9fa] rounded-3xl px-6 py-5 shadow-md overflow-hidden h-36 hover:shadow-lg transition">
+                <div class="text-[#3d3d3e] font-semibold text-lg z-10 drop-shadow-md">
+                    Alat Musik
+                </div>
+                <div class="relative -mr-6 w-full h-full overflow-visible">
+                    <img src="img/kategori/alat-musik.png" alt="Alat Musik"
+                        class="absolute -top-4 left-1 w-auto h-[180px] object-cover drop-shadow-md overflow-visible rotate-[-90deg]" />
+                </div>
+            </a>
+
+            <!-- Card 6: Fashion -->
+            <a href="kategori.html?kategori=Fashion"
+                class="relative flex items-center justify-between bg-[#f8f9fa] rounded-3xl px-6 py-5 shadow-md overflow-hidden h-36 hover:shadow-lg transition">
+                <div class="text-[#3d3d3e] font-semibold text-lg z-10 drop-shadow-md">
+                    Fashion
+                </div>
+                <div class="relative -mr-6 w-full h-full overflow-visible">
+                    <img src="img/kategori/fashion.png" alt="Fashion"
+                        class="absolute -bottom-12 left-2 w-auto h-[150px] object-cover drop-shadow-md overflow-visible" />
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Rekomendasi Section -->
+    <section class="px-6 md:px-20 mt-10 mb-20">
+        <h2 class="text-3xl font-bold mb-8">Rekomendasi Barang</h2>
+        <div id="rekomendasi-barang" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Barang akan muncul otomatis di sini oleh rekomendasi.js -->
+        </div>
+
+        <!-- Tombol View More -->
+        <div class="flex justify-center mt-8">
+            <div id="rekomendasi-barang" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+            <button id="btn-view-more"
+                class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                View More
+            </button>
+        </div>
+    </section>
+
+    <script src="data-barang.js"></script>
+    <script src="tampil-barang.js"></script>
+    <script src="search-barang.js"></script>
+</body>
+
+</html>

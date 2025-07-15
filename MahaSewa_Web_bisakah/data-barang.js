@@ -1,0 +1,111 @@
+const barang = [
+  {
+    id: 1,
+    nama: "Meja Belajar Kayu Minimalis",
+    kota: "Yogyakarta",
+    rating: 4.8,
+    harga: 25000,
+    pemilik: "Ardi",
+    gambar:
+      "https://down-id.img.susercontent.com/file/91f70dbe03a4c35aab27cd6095e5c64e",
+    kategori: "Furnitur",
+  },
+  {
+    id: 2,
+    nama: "Kompor Gas Portable",
+    kota: "Jakarta",
+    rating: 4.5,
+    harga: 15000,
+    pemilik: "Rina",
+    gambar: "https://deadeastore.com/data/images/product/IMG334891.jpg",
+    kategori: "Peralatan Dapur",
+  },
+  {
+    id: 3,
+    nama: "Tenda Camping Kapasitas 4 Orang",
+    kota: "Bandung",
+    rating: 4.9,
+    harga: 50000,
+    pemilik: "Budi",
+    gambar:
+      "https://filebroker-cdn.lazada.co.id/kf/S95329a63713e4a74a5df379b931a68ec3.jpg",
+    kategori: "Outdoor",
+  },
+  {
+    id: 4,
+    nama: "Kamera DSLR Canon EOS",
+    kota: "Yogyakarta",
+    rating: 4.7,
+    harga: 80000,
+    pemilik: "Sinta",
+    gambar:
+      "https://down-id.img.susercontent.com/file/1403fc9c9d243be0531692a33a136ebb",
+    kategori: "Elektronik",
+  },
+  {
+    id: 5,
+    nama: "Gitar Akustik Yamaha",
+    kota: "Jakarta",
+    rating: 4.6,
+    harga: 30000,
+    pemilik: "Doni",
+    gambar:
+      "https://media.karousell.com/media/photos/products/2024/1/3/yamaha_f310_gitar_akustik_yama_1704255211_6b0d7489_progressive.jpg",
+    kategori: "Alat Musik",
+  },
+  {
+    id: 6,
+    nama: "Jas Pria",
+    kota: "Bandung",
+    rating: 4.3,
+    harga: 40000,
+    pemilik: "Fitra",
+    gambar:
+      "https://media.karousell.com/media/photos/products/2024/10/4/blazer_jas_pria_modern_1728016237_631aef90_progressive",
+    kategori: "Fashion",
+  },
+  {
+    id: 7,
+    nama: "Vacuum Cleaner Portable",
+    kota: "Yogyakarta",
+    rating: 4.4,
+    harga: 20000,
+    pemilik: "Rico",
+    gambar:
+      "https://media.karousell.com/media/photos/products/2021/7/21/vacuum_cleaner_portable_1626853469_bd43967a.jpg",
+    kategori: "Elektronik",
+  },
+  {
+    id: 8,
+    nama: "Wajan Teflon Anti Lengket",
+    kota: "Jakarta",
+    rating: 4.2,
+    harga: 10000,
+    pemilik: "Lia",
+    gambar:
+      "https://media.karousell.com/media/photos/products/2021/9/8/teflon_bekas_1631078348_bceb2675_progressive.jpg",
+    kategori: "Peralatan Dapur",
+  },
+  {
+    id: 9,
+    nama: "Set Sofa Minimalis 3 Dudukan",
+    kota: "Bandung",
+    rating: 4.9,
+    harga: 120000,
+    pemilik: "Ahmad",
+    gambar:
+      "https://ulinfurniture.com/wp-content/uploads/2020/11/Sofa-Minimalis-3-Dudukan.jpg",
+    kategori: "Furnitur",
+  },
+  {
+    id: 10,
+    nama: "Sepeda Gunung Polygon",
+    kota: "Yogyakarta",
+    rating: 4.8,
+    harga: 60000,
+    pemilik: "Eka",
+    gambar:
+      "https://media.karousell.com/media/photos/products/2024/7/25/polygon_monarch_m5_sepeda_gunu_1721893793_19efb6c5_progressive.jpg",
+    kategori: "Outdoor",
+  },
+];
